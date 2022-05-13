@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/css/style.css" />
+
+    <title>Online shop</title>
+  </head>
+
+  <body>
+    <div class="overlay-black hidden"></div>
+    <div class="container">
+      <header>
+        <div class="hamburger show">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="hamburger-close show">
+          <i class="fa-solid fa-x"></i>
+        </div>
+        <div class="logo_links">
+          <img class="logo" src="src/images/logo.svg" alt="sneakers logo" />
+          <nav class="menu hidden-nav hidden-mobile">
+            <div class="slide-menu hidden-mobile">
+              <ul>
+                <li><a href="#">Collections</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="cart-account">
+          <div class="box">
+            <div class="cart-container">
+              <a href="#"
+                ><img
+                  class="cart"
+                  src="src/images/icon-cart.svg"
+                  alt="icon-cart"
+              /></a>
+
+              <div class="cart-count cart-count-hidden">
+                <span class="number">1</span>
+              </div>
+
+              <div class="cart-hover">
+                <!-- -->
+                <div class="cart-content-margin">
+                  <div class="cart-content-name">
+                    <li>Cart</li>
+                  </div>
+
+                  <div class="cart-content">
+                    <li class="message">Your cart is empty.</li>
+                    <!--
+                  <div class="preview">
+                    <img
+                      class="image-product"
+                      src="src/images/image-product-1-thumbnail.jpg"
+                      alt=""
+                    />
+                    <div class="product-details">
+                      <span class="sneakers_description"
+                        >Fall Limited Edition Sneakers
+                        <span class="amount-cart">$125.00</span> x 1 =
+                        <strong>$125.00</strong>
+                      </span>
+                    </div>
+                    <div class="delete-content-cart">
+                      <img src="src/images/icon-delete.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="checkout">
+                    <button class="btn-checkout">Checkout</button>
+                  </div>
+                   -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img
+            class="avatar-account"
+            src="src/images/image-avatar.png"
+            alt="avatar-account"
+          />
+        </div>
+      </header>
+
+      <div class="main">
+        <div class="sneakers-images">
+          <div class="big-images-container">
+            <div class="btn-close-lightbox-container hidden-btn">
+              <button class="btn-lightbox">
+                <i class="fa-solid fa-x"></i>
+              </button>
+            </div>
+            <div class="arrow arrow-next arrow-mobile">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div>
+              <img
+                class="big-photo active-big-photo lightbox"
+                src="src/images/image-product-1.jpg"
+                alt="sneakers-img"
+              />
+            </div>
+            <div>
+              <img
+                class="big-photo"
+                src="src/images/image-product-2.jpg"
+                alt="sneakers-img"
+              />
+            </div>
+            <div>
+              <img
+                class="big-photo"
+                src="src/images/image-product-3.jpg"
+                alt="sneakers-img"
+              />
+            </div>
+            <div>
+              <img
+                class="big-photo"
+                src="src/images/image-product-4.jpg"
+                alt="sneakers-img"
+              />
+            </div>
+            <div class="arrow arrow-previous arrow-mobile">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+          </div>
+
+          <div class="small-images">
+            <div class="active-img img-small">
+              <img src="src/images/image-product-1-thumbnail.jpg" alt="1" />
+            </div>
+            <div class="img-small">
+              <img src="src/images/image-product-2-thumbnail.jpg" alt="1" />
+            </div>
+            <div class="img-small">
+              <img src="src/images/image-product-3-thumbnail.jpg" alt="1" />
+            </div>
+            <div class="img-small">
+              <img src="src/images/image-product-4-thumbnail.jpg" alt="1" />
+            </div>
+          </div>
+        </div>
+
+        <div class="sneakers-info">
+          <span class="company">Sneaker company</span>
+          <h1>Fall Limited Edition Sneakers</h1>
+          <p>
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+          <div class="price-discount">
+            <div class="price">$125.00</div>
+            <span class="discount">50%</span>
+          </div>
+          <span id="old-price">$250.00</span>
+          <div class="border"></div>
+
+          <div class="amount-and-cart-buttons">
+            <div class="input_plus_minus">
+              <button class="btn-amount btn-minus">
+                <img src="src/images/icon-minus.svg" alt="icon-minus" />
+              </button>
+              <label for="amount"></label>
+              <input
+                type="number"
+                class="amount"
+                min="0"
+                max="10"
+                value="1"
+                step="1"
+              />
+              <button class="btn-amount btn-plus">
+                <img src="src/images/icon-plus.svg" alt="icon-plus" />
+              </button>
+            </div>
+            <div class="add-to-cart">
+              <button class="btn-add-to-cart">
+                <img
+                  class="icon-btn-cart"
+                  src="src/images/icon-cart.svg"
+                  alt=""
+                /><span>Add to cart</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>
+
+<script src="src/js/controller.js"></script>
+<script
+  src="https://kit.fontawesome.com/080839f262.js"
+  crossorigin="anonymous"
+></script>
